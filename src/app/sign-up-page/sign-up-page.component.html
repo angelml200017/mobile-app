@@ -1,0 +1,72 @@
+<h4>Iniciar Sesión</h4>
+<hr>
+<form autocomplete="off" (ngSubmit)="guardar(formulario)" #formulario="ngForm">
+
+  <div>
+
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Name</label>
+      <div class="col-8">
+
+        <input class="form-control"
+               type="text"
+               placeholder="name"
+               ngModel
+               name="name">
+
+
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Surname</label>
+      <div class="col-8">
+
+        <input class="form-control"
+               type="text"
+               placeholder="surname"
+               ngModel
+               name="surname">
+
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Email</label>
+      <div class="col-8">
+
+        <input class="form-control"
+               type="text"
+               placeholder="email"
+               ngModel
+               name="email">
+
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Password</label>
+      <div class="col-8">
+
+        <input class="form-control"
+               type="text"
+               placeholder="password"
+               ngModel
+               name="password">
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">&nbsp;</label>
+    <div class="input-group col-md-8">
+      <button type="submit" class="btn btn-outline-primary btn-block">
+        Registrarse
+      </button>
+    </div>
+  </div>
+
+</form>

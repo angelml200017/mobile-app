@@ -1,0 +1,31 @@
+<h1>Listado de Usuarios</h1>
+
+  <div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+    <table class="table table-bordered table-striped mb-0">
+      <tbody *ngFor="let user of users">
+          <tr>
+            <td>id: </td>
+          <td>{{user.id}}</td>
+          </tr>
+          <tr>
+            <td>name: </td>
+            <td>{{user.name}}</td>
+          </tr>
+          <tr>
+            <td>surname: </td>
+          <td>{{user.surname}}</td>
+          </tr>
+          <tr>
+            <td>email: </td>
+          <td>{{user.email}}</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+
+  <select name="list" [(ngModel)]="id">
+    <option   *ngFor="let user of users; index as i" value="{{user.id}}">{{user.name}} | {{user.email}}</option>
+</select>
+<button class="button" (click)="modificarUsuario()">Modificar Usuario</button>
+<button class="button" (click)="eliminarUsuario()">Eliminar Usuario</button>
